@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DES</title>
+	<link rel="stylesheet" type="text/css" href="des.css">
+	<script type="text/javascript" src="jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="plotly-latest.min.js"></script>
+	<script type="text/javascript" src="canvasjs.min.js"></script>
+</head>
+<body>
+	
+	<div class="le">
+		<label>No Of Rounds:</label>
+		<select name="rounds" id="round" style="font: Times New Roman; font-size: 15px; border-radius: 5px; background-color: #D3D3D3; font-style: oblique; display: inline-block;border-width: 1px; border: solid; margin: 2px; padding: 5px;">
+  <option value='1'>1</option>
+  <option value='8'>8</option>
+  <option value='16'>16</option>
+  <option value='32'>32</option>
+</select>
+	</div>
+	<div class="le">
+		<label>Width of data block:</label>
+		<select name="rounds" id="width" style="font: Times New Roman; font-size: 15px; border-radius: 5px; background-color: #D3D3D3; font-style: oblique; display: inline-block;border-width: 1px; border: solid; margin: 2px; padding: 5px;">
+  <option value='16'>32</option>
+  <option value='32'>64</option>
+  <option value='64'>128</option>
+</select>
+	</div>
+	<!-- <div class="le">
+		<label>Plaintext:</label>
+		<input type="text" name="plaintext" id="plaintext">
+	</div>
+	<div class="le">
+		<label>Key:</label>
+		<input type="text" name="key" id="key">
+	</div> -->
+	<button id="e">Encrypt</button>
+	
+	<hr>
+	<div>
+	<p>Encryption Details:<p>
+	<textarea id="ans" rows="5" cols="100"></textarea>
+	<!-- <p>After Changing one bit of Plaintext</p>
+	<textarea id="ans1" rows="5" cols="100"></textarea>
+	<p>After Changing one bit of key</p>
+	<textarea id="ans2" rows="5" cols="100"></textarea> -->
+	</div>
+	<!-- <div>
+	<p>Decryption Details:<p>
+	<textarea id="ans2" rows="25" cols="90"></textarea>
+	</div>
+ -->
+	<div id="myDiv" style="height: 300px; width: 100%"></div>
+	<hr>
+	<div id="chartcontainer" style="height: 300px; width: 100%"></div>
+	<script type="text/javascript" src="des.js"></script>
+</body>
+</html>
